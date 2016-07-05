@@ -4,31 +4,37 @@
 <head>
 <title>HTML 5 Hour 2 테스트</title>
 <link type="text/css" href="styles.css">
+ 
 
 <script type="text/javascript">
 	function drawSquare () 
 	{
-		var canvas = document.getElementById('simple-square');
+		canvas = document.getElementById("simple-square");
 		if (canvas.getContext) 
 		{
-			var context = canvas.getContext('2d');
+			context = canvas.getContext("2d");
 			context.fillStyle = "rgb(13, 118, 208)";
-			context.fillRect (2,2,798,798);
+			context.fillRect(2,2,798,798);
+			//stars();
+			//makeShip();
+			
 		} 
 		else 
 		{
 		// put code for browsers that don’t support canvas here
-		alert(“This page requires an HTML5 compliant browser to render
-		correctly. Other browsers may not see anything.")
+		alert("This page requires an HTML5 compliant browser to render correctly. Other browsers may not see anything.")
 		}
 	}
 </script>
 
+
+
 </head>
 
-<body onload="drawSquare">
+
+<body onload="drawSquare()">
 	HTML 5 Canvas Example
-	<canvas id="simple-square" width="800" height="800"></canvas>
+	<canvas id="simple-square" width="800" height="800"> test </canvas>
 
 	</body>
 
