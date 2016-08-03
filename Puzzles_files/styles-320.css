@@ -1,0 +1,41 @@
+@charset "utf-8";
+#container {
+	width: auto;
+	padding: 0.25em;
+	background-color: #fff;
+}
+#header {
+	background: #3c3cc3 none;
+	color: #fff;
+	height: auto;
+	padding: 0.25em;
+}
+#header h1 { 
+	color: #fff;
+}
+#navigation {
+	width: auto;
+	float: none;
+}
+#intro {
+	width: auto;
+	float: none;
+}
+#footer #twitter, #footer #rss, #footer #decoration {
+	display: none;
+}
+#footer {
+	width: auto;
+	background-image: none;
+	background-color: #3c6ac4;
+	color: #ffffff;
+	height: 100px;
+	padding: 1em;
+	clear: both;
+}
+#footer #copyright {
+	float: none;
+	text-align: left;
+	width: auto;
+	height: 100px;
+}

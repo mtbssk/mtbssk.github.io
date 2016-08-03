@@ -1,0 +1,37 @@
+@charset "utf-8";
+#container {
+	width: auto;
+	padding: 1em;
+	background-color: #fff;
+}
+#navigation {
+	width: auto;
+	float: none;
+}
+#intro {
+	width: auto;
+	float: none;
+}
+#intro > h2 { margin-top: 1em; }
+#footer #twitter, #footer #rss, #footer #decoration {
+	display: none;
+}
+#footer {
+	width: auto;
+	background-image: none;
+	background-color: #3c6ac4;
+	color: #ffffff;
+	height: 200px;
+	padding: 1em;
+	clear: both;
+}
+#footer #copyright {
+	float: none;
+	text-align: left;
+	width: auto;
+	height: 200px;
+}
+#join {
+	padding: 0;
+	right: 1em;
+}

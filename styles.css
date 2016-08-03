@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+/* RESETS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Typography */
+body { font-size: 62.5%; } /* fix global font size to 10px from 16px */
+h1 {
+	font-size: 2.3em;
+	line-height: 2.8em;
+}
+h2 {
+	font-size: 1.8em;
+	line-height: 2.3em;
+}
+h3 {
+	font-size: 1.6em;
+	line-height: 2.1em;
+	color: #000;
+}
+h4 {
+	font-size: 1.4em;
+	line-height: 2.9em;
+}
+h5 {
+	font-size: 1.2em;
+	line-height: 1.7em;
+}
+h6 {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+p, label, li, span {
+	font-size: 1.4em;
+	line-height: 1.8em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-bottom: 0.5em;
+}
+
+/* colors */
+body {
+	color: #000000;
+	background-color: #3c6ac4;
+}
+/* 
+#3c6ac4 blue
+#3c3cc3 dark blue
+#c3963c tan
+#000000 black
+#ffffff white
+*/
+
+body > section {
+	background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, a:link {
+	color: #3c3cc3;
+}
+a:visited, a:active {
+	color: #c3963c;
+}
+a:hover {
+	color: #3c6ac4;
+}
+
+#header {
+	background: #fff url(images/puzzle-piece-logo.png) no-repeat;
+	height: 15em;
+	padding-left: 16.2em;
+}
+
+#footer {
+	background: #3c6ac4 url(images/puzzle-piece-bottom.png) no-repeat 1em 1em;
+	color: #ffffff;
+	height: 40em;
+	padding-top: 1em;
+}
+#footer h3 { color: #fff; }
+
+/* layout */
+#container {
+	width: 100em;
+	margin: auto;
+	overflow: auto;
+	padding: 1em;
+}
+#navigation {
+	width: 29em;
+	float: right;
+	background-color: #fff;
+	padding-left: 1em;
+}
+#intro {
+	width: 70em;
+	float: left;
+	background-color: #fff;
+}
+#footer { 
+	clear: both; 
+	width: 103.5em;
+}
+#footer #twitter, #footer #copyright, #footer #rss, #footer #decoration {
+	width: 20em;
+	float: left;
+	height: 40em;
+}
+#footer #decoration {
+	width: 33.5em;
+}
+/* join button */
+#join {
+	background: #c3963c;
+	height: 10em;
+	width: 10em;
+	float: right;
+	border-radius: 5em;
+	-webkit-border-radius: 5em;
+	-moz-border-radius: 5em;
+	-moz-box-shadow: 1em 1em 0.5em #888;
+	-webkit-box-shadow: 1em 1em 0.5em #888;
+	box-shadow: 1em 1em 0.5em #888;
+	position: relative;
+	top: -1em;
+	right: 1em;
+}
+#join h2 { 
+	text-align: center;
+	margin-top: 1.5em;
+}
+#join h2 a {
+	color: #3c3cc3;
+	text-decoration: none;
+}
+#join a:visited { color: #3c6ac4; }
+
+/* scripting CSS */
+.highlight {
+	text-shadow: 0.25em 0.25em 0.25em #dfdfdf;
+}
+.error {
+	color: #c00;
+	border: solid 0.1em #c00;
+}
+.errFloat { float: right; }

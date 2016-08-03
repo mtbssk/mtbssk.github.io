@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://puzzles.kyrnin.com/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Puzzles</title>
+<link rel="stylesheet" href="./Puzzles_files/styles.css">
+<script src="./Puzzles_files/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#join").hover(function() {
+		$(this).addClass("highlight");
+	},function(){
+		$(this).removeClass("highlight");
+	});
+	
+	var form = $("#loginForm");
+	var user = $("#username");
+	var pass = $("#pass");
+	var unote = $("#unote");
+	var pnote = $("#pnote");
+	
+	function requiredUser() {
+		if (user.val().length < 1) {
+			user.addClass("error");
+			unote.text("Username Required");
+			user.focus();
+			unote.addClass("error");
+			unote.addClass("errFloat");
+			return false;
+		} else {
+			user.removeClass("error");
+			unote.text("");
+			unote.removeClass("error");
+			unote.removeClass("errFloat");
+			return true;
+		}
+	}
+	function requiredPass() {
+		if (pass.val().length < 1) {
+			pass.addClass("error");
+			pnote.text("Password is required");
+			pass.focus();
+			pnote.addClass("error");
+			pnote.addClass("errFloat");
+			return false;
+		} else {
+			pass.removeClass("error");
+			pnote.text("");
+			pnote.removeClass("error");
+			pnote.removeClass("errFloat");
+			return true;
+		}
+	}
+	
+	user.blur(requiredUser);
+	pass.blur(requiredPass);
+	user.keyup(requiredUser);
+	pass.keyup(requiredPass);
+	
+	form.submit(function(){
+		if (requiredUser() && requiredPass())
+			return true;
+		else
+			return false;
+	});
+
+});
+</script>
+<!-- Smartphone -->
+<link href="./Puzzles_files/styles-480.css" rel="stylesheet" type="text/css" media="only screen and (min-width:320px) and (max-width:480px)">
+<!-- Feature Phone -->
+<link href="./Puzzles_files/styles-320.css" rel="stylesheet" type="text/css" media="only screen and (max-width:319px)">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+    <section id="container">
+        <header id="header">
+            <h1>Puzzles</h1>
+			<a href="http://puzzles.kyrnin.com/index.html#"><section id="join" class="unhighlight">
+	            <h2>Join Now!</h2>
+            </section></a>
+        </header>
+		<section id="intro">
+        	<h2>Create and Solve Puzzles Online</h2>
+            <p>This is the introductory text to my puzzles home page.</p>
+            <p>Duis aute irure dolor ut enim ad minim veniam, ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt velit esse cillum dolore in reprehenderit in voluptate. Eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Qui officia deserunt lorem ipsum dolor sit amet, velit esse cillum dolore.</p>
+            <p>Ullamco laboris nisi eu fugiat nulla pariatur. Consectetur adipisicing elit, ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt qui officia deserunt cupidatat non proident. Sunt in culpa in reprehenderit in voluptate duis aute irure dolor. Lorem ipsum dolor sit amet, excepteur sint occaecat mollit anim id est laborum.</p>
+            <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa ullamco laboris nisi. Quis nostrud exercitation consectetur adipisicing elit, ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt sunt in culpa velit esse cillum dolore. Lorem ipsum dolor sit amet, cupidatat non proident, eu fugiat nulla pariatur.</p>
+            <p>Sed do eiusmod tempor incididunt ullamco laboris nisi sunt in culpa. Qui officia deserunt lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Quis nostrud exercitation duis aute irure dolor. Quis nostrud exercitation eu fugiat nulla pariatur.</p>
+        </section>
+		<section id="navigation">
+			<form id="loginForm">
+        	<h2>Login</h2>
+            	<label for="username">Username:</label><br><span id="unote"></span>
+                <input type="text" id="username" size="12"><br>
+                <label for="password">Password:</label><br><span id="pnote"></span>
+                <input type="password" id="pass" size="12"><br>
+                <input type="submit" id="submit" value="Login">
+            </form>
+            <p><a href="http://puzzles.kyrnin.com/lost.php">Lost password</a> <a href="http://puzzles.kyrnin.com/register.php">Register</a></p>
+        </section>
+    </section>
+    <footer id="footer">
+    	<aside id="decoration">
+        <p>&nbsp;</p>
+        </aside>
+    	<aside id="copyright">
+        <h3>©2011 – My Puzzle Site</h3>
+        </aside>
+        <aside id="twitter">
+        <p>Twitter feed here
+        </p><ul>
+        <li>Tweet</li>
+        <li>Tweet</li>
+        </ul>
+        </aside>
+        <aside id="rss">
+        <p>RSS feed here
+        </p><ul>
+        <li>blah</li>
+        <li>blah</li>
+        </ul>
+        </aside>
+    </footer>
+
+
+</body></html>
