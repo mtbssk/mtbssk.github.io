@@ -139,6 +139,16 @@ a:hover {
 	float: left;
 	background-color: #fff;
 }
+#create-puzzle {
+	width: 70em;
+	float: left;
+	background-color: #fff;
+}
+#solve-puzzle {
+	width: 70em;
+	float: left;
+	background-color: #fff;
+}
 #footer { 
 	clear: both; 
 	width: 103.5em;
