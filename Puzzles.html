@@ -101,17 +101,6 @@ $(document).ready(function(){
             <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa ullamco laboris nisi. Quis nostrud exercitation consectetur adipisicing elit, ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt sunt in culpa velit esse cillum dolore. Lorem ipsum dolor sit amet, cupidatat non proident, eu fugiat nulla pariatur.</p>
             <p>Sed do eiusmod tempor incididunt ullamco laboris nisi sunt in culpa. Qui officia deserunt lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Quis nostrud exercitation duis aute irure dolor. Quis nostrud exercitation eu fugiat nulla pariatur.</p>
         </section>
-		<section id="navigation">
-			<form id="loginForm">
-        	<h2>Login</h2>
-            	<label for="username">Username:</label><br><span id="unote"></span>
-                <input type="text" id="username" size="12"><br>
-                <label for="password">Password:</label><br><span id="pnote"></span>
-                <input type="password" id="pass" size="12"><br>
-                <input type="submit" id="submit" value="Login">
-            </form>
-            <p><a href="http://puzzles.kyrnin.com/lost.php">Lost password</a> <a href="http://puzzles.kyrnin.com/register.php">Register</a></p>
-        </section>
 		<section id=”puzzle-list”>
 			<h2>Puzzles List</h2>
 				<table>
@@ -131,6 +120,39 @@ $(document).ready(function(){
 					</tr>
 				</table>
 		</section>
+		<section id=”create-puzzle”>
+			<h2>Create a New Puzzle</h2>
+			<form method=”post” action=”#”>
+				<label for=pname>Puzzle Name:</label><br>
+				<input type=text name=pname size=50><br>
+				<label for=pquestion>Puzzle Question:</label><br>
+				<textarea name=pquestion rows=5 cols=50></textarea><br>
+				<label for=panswer>Puzzle Answer</label>
+			</form>
+		</section>
+		<section id=”solve-puzzle”>
+			<h2>Solve a Puzzle</h2>
+			<h3>Puzzle Name</h3>
+				<p class=”question”>Q: This is the puzzle question?</p>
+				<form method=”post” action=”#”>
+					<label for=panswer>Your Answer</label>
+					A: <textarea name=panswer rows=5 cols=50></textarea><br>
+					<input type=submit name=submit value=Submit>
+				</form>
+		</section>
+		
+		<section id="navigation">
+			<form id="loginForm">
+        	<h2>Login</h2>
+            	<label for="username">Username:</label><br><span id="unote"></span>
+                <input type="text" id="username" size="12"><br>
+                <label for="password">Password:</label><br><span id="pnote"></span>
+                <input type="password" id="pass" size="12"><br>
+                <input type="submit" id="submit" value="Login">
+            </form>
+            <p><a href="http://puzzles.kyrnin.com/lost.php">Lost password</a> <a href="http://puzzles.kyrnin.com/register.php">Register</a></p>
+        </section>
+		
     </section>
     <footer id="footer">
     	<aside id="decoration">
