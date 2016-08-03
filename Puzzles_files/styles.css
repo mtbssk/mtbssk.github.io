@@ -108,13 +108,13 @@ a:hover {
 }
 
 #header {
-	background: #fff url(images/puzzle-piece-logo.png) no-repeat;
+	background: #fff url(../images/puzzle-piece-logo.png) no-repeat;
 	height: 15em;
 	padding-left: 16.2em;
 }
 
 #footer {
-	background: #3c6ac4 url(images/puzzle-piece-bottom.png) no-repeat 1em 1em;
+	background: #3c6ac4 url(../images/puzzle-piece-bottom.png) no-repeat 1em 1em;
 	color: #ffffff;
 	height: 40em;
 	padding-top: 1em;
